@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header, footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 30px;
+    
+  }
+
+  ul li {
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+    color: black;
+}
+
+a {
+    color: inherit;          /* Наследовать цвет текста родителя */
+    text-decoration: none;   /* Убираем подчеркивание */
+}
+
+img {
+    max-height: 20%;
+    max-width: 15%;
+}
+
+.main {
+    width: 100%;
+    flex-grow: 1;
+    background: url(image_2024-09-05_16-07-04.png);
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+.speaker-form {
+  background-color: pink;
+  border: 3px solid white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 35%; 
+  margin-top: 80px; /* Отступ сверху, чтобы форма не прилипала */
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.name, .city, .present {
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  
+}
+
+.form-row input {
+  width: 100%;
+  padding-top: 12px; 
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  font-size: 14px;
+  color: white;
+}
+
+input::placeholder {
+  color: white;                    /* Цвет плейсхолдера */
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;                  /* Убираем стандартное выделение */
+  color: white;
+}
+
+.button button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: orange;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button {
+  width: 25%;
+  margin: 10px;
+}
+
+h1 {
+  color: orange;
+  margin-top: auto;
+  text-align: center; /* Центрирование заголовка */
+  font-size: 26px;
+}
+
+
+
+@media only screen and (min-width: 780px) {
+    .page {
+        width: 1200px;
+    }
+    
+    header, footer {
+        font-size: 32px;
+    }
+    
+    .speaker-form {
+      min-width: 25%;
+      position: relative;
+      right: 380px;
+    }
+  
+    .button button {
+      font-size: 20px;
+    }
+    
+    .button {
+      width: 20%;
+      position: relative;
+      right: 380px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    .form-row label {
+      font-size: 20px;
+    }
+    
+    .form-row input {
+      font-size: 16px;
+    }
+    
+    input::placeholder {
+      font-size: 16px;
+    }
+
+  }
+
+  
